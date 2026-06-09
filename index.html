@@ -274,6 +274,22 @@ label{display:block;font-size:.68em;font-weight:600;font-family:var(--mono);colo
   *{animation-duration:.001s!important;animation-iteration-count:1!important}
   .ember-p,.orb{display:none}
 }
+/* Footer */
+.site-footer{position:relative;z-index:1;text-align:center;padding:48px 22px 36px;margin-top:20px;
+  border-top:1px solid var(--line)}
+.site-footer .footer-brand{font-family:var(--serif);font-size:1.3em;font-weight:700;
+  background:linear-gradient(100deg,var(--copper-lt),var(--ember-glow),var(--gold));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 14px rgba(232,116,59,0.2));letter-spacing:.3px}
+.site-footer .footer-tagline{font-family:var(--mono);font-size:.65em;color:var(--ink-faint);
+  text-transform:uppercase;letter-spacing:3px;margin:8px 0 20px}
+.site-footer .btn-community{display:inline-flex;align-items:center;gap:8px;
+  padding:12px 28px;background:linear-gradient(135deg,var(--copper),var(--copper-dk));
+  color:#1a120a;border:none;border-radius:var(--radius-pill);font-size:.85em;font-weight:700;
+  font-family:var(--sans);letter-spacing:.3px;cursor:pointer;text-decoration:none;
+  transition:all .22s}
+.site-footer .btn-community:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(198,149,92,0.4)}
+.site-footer .btn-community svg{width:16px;height:16px;fill:currentColor}
 </style>
 </head>
 <body>
@@ -420,6 +436,15 @@ label{display:block;font-size:.68em;font-weight:600;font-family:var(--mono);colo
     </div>
   </div>
 </div>
+
+<footer class="site-footer">
+  <div class="footer-brand">Soul-Forged Founders</div>
+  <div class="footer-tagline">Where methods become magic</div>
+  <a href="https://www.skool.com/soul-forged-founders/about" target="_blank" rel="noopener" class="btn-community">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    Go to Community
+  </a>
+</footer>
 
 <div class="modal-overlay" id="modal"><div class="modal-inner" id="modalContent"></div></div>
 <div class="toast" id="toast"></div>
