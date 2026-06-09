@@ -89,6 +89,7 @@ input,textarea,select{width:100%;padding:11px 14px;border:1px solid var(--line-2
 input:focus,textarea:focus,select:focus{border-color:var(--copper);
   box-shadow:0 0 0 3px rgba(198,149,92,0.18),var(--glow-copper);background:rgba(241,231,214,0.06)}
 input::placeholder,textarea::placeholder{color:var(--ink-faint)}
+input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(80%) sepia(40%) saturate(400%) hue-rotate(350deg) brightness(105%)}
 textarea{resize:vertical;min-height:80px}
 select{cursor:pointer;-webkit-appearance:none;appearance:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23BDB09A' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
